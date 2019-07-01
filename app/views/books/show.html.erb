@@ -1,0 +1,12 @@
+<div id="show">
+	<%= notice %>
+	<div class="content">
+		<p><span class="lavel">Title: </span><%= @book.title %></p>
+		<p><span class="lavel">Body: </span><%= @book.body %></p>
+	</div>
+	<div class="link-content">
+		<%= link_to "Edit", edit_book_path(@book.id), class:"link" %>
+		<span>|</span>
+		<%= link_to "Back", books_path, class:"link" %>
+	</div>
+</div>
